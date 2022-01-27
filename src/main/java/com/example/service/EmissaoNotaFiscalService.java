@@ -13,8 +13,8 @@ public class EmissaoNotaFiscalService {
     }
 
     public void emitir(Cliente cliente, Produto produto) {
-        //TODO faz todo processo de emissão da nota fiscal
-        //NotificadorSMS notificador = new NotificadorSMS();
+        // TODO faz todo processo de emissão da nota fiscal
+        // NotificadorSMS notificador = new NotificadorSMS();
         notificador.notificar(cliente, "Nota fiscao do produto " + produto.getNome() + " foi emitida!");
     }
 }

@@ -10,6 +10,8 @@ public class App {
         Cliente maria = new Cliente("Maria da silva", "maria@xyz.com", "1198765432");
 
         // AtivacaoClienteService ativacaoCliente = new AtivacaoClienteService();
+        // Injeção manual de dependência: passamos o tipo de notificação 
+        // por parâmetro para as classes services que irão usá-la
         AtivacaoClienteService ativacaoCliente = new AtivacaoClienteService(new NotificadorSMS());
         ativacaoCliente.ativar(joao);
         ativacaoCliente.ativar(maria);
